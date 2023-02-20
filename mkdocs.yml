@@ -1,0 +1,17 @@
+site_name: Portable Skyrim
+site_url: https://portable-skyrim.info/
+theme: readthedocs
+nav:
+    - Home: index.md
+    - How it works: howitworks.md
+    - Requirements: requirements.md
+    - Install Skyrim: installskyrim.md
+    - Create symlink: symlink.md
+    - ModOrganizer 2: modorganizer2.md
+    - Directory mount: dirmount.md
+    - FreeFileSync: freefilesync.md
+    - Start game: startgame.md
+    - Share saves: sharesaves.md
+    - Change mods: changemods.md
+    - Control issues: controls.md
+    
