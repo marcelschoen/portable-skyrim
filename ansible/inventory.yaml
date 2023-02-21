@@ -1,0 +1,9 @@
+webservers:
+  hosts:
+    poweredge:
+      ansible_host: 192.168.0.138
+    hosttech:
+      ansible_host: 35923.hostserv.eu
+    localhost:
+      ansible_host: 127.0.0.1
+      ansible_connection: local

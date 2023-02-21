@@ -1,0 +1,19 @@
+##################################################################
+# For the servers, use rsync
+##################################################################
+
+- hosts: hosttech:poweredge
+  become: true
+
+# Source: https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-install-and-set-up-docker-on-ubuntu-20-04
+
+  tasks:
+
+    - name: copy portable-sykrim web server content
+      ansible.posix.synchronize:
+        src: ../site/
+        dest: /data/docker-compose/web/webserver/portable-skyrim
+
+    - name: set portable-skyrim web server files owner and group
+      command: chown -R docker:docker /data/docker-compose/web/webserver
+
